@@ -43,19 +43,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    /*
-        |                  |          | Knob 2: Vol Up/Dn |
-        |  Toggle Layer 1  |    Up    |    Press: Mute    |
-        |      Left        |   Down   |      Right        |
-     */
+
     [0] = LAYOUT(
         CATCHPHRASE, MESSAGE, KC_MUTE,
         KC_MPRV , KC_MPLY  , KC_MNXT
     ),
-    /*
-        |               |   Increase Brightness  |     Mute   |
-        |    RGB Cycle  |   Decrease Brightness  |  Hue Cycle |
-     */
+
     [1] = LAYOUT(
         _______  , RGB_VAI, KC_MUTE,
         RGB_MOD, RGB_VAD, RGB_HUI
